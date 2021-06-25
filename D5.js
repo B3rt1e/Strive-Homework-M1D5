@@ -56,19 +56,26 @@ It should add the word "Strive" in front of the given string, but if the given s
 */
 
 let strivify = function(string) {
-  let strivi = ("Strive"+string)
+  let strivi = "Strive"+string
   return strivi
 }
 
-let strivi = strivify("bull")
-console.log(strivi)
+// let strivi = strivify("bull")
+// console.log(strivi)
 
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
 HINT: Module Operator
 */
 
-/* WRITE YOUR CODE HERE */
+let check3and7 = function(x){
+  let posNum = x >= 0 && ((x%3 == 0) || (x%7 == 0)) ? console.log(`The number ${x} works for me :)`) : console.log("Please try again!")
+  return posNum
+}
+
+let posNum = check3and7(21)
+console.log(posNum)
+
 
 /* EXERCISE 7
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
