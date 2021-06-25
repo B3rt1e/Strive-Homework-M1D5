@@ -14,11 +14,18 @@ let area = function(l1, l2){
   return rectangle
 }
 let rectangle = area(2,3)
-console.log(rectangle)
+// console.log(rectangle)
 
 /* EXERCISE 2
 Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
+
+let crazySum = function(int1, int2){
+    let sum = int1 === int2 ? (int1+int2)*3 :int1+int2 
+    return sum
+}
+let sum = crazySum(2,2)
+console.log(sum)
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
