@@ -42,15 +42,26 @@ let crazyDiff = function (number) {
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
-
-/* WRITE YOUR CODE HERE */
+let boundary = function(n) {
+  let isTrue =  (n > 20 && n <= 100 || n === 400) ? true : false
+  return isTrue
+}
+// let checkIfTrue = boundary(401)
+// console.log(checkIfTrue)
+// console.log(typeof(checkIfTrue))
 
 /* EXERCISE 5
 Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
 
-/* WRITE YOUR CODE HERE */
+let strivify = function(string) {
+  let strivi = ("Strive"+string)
+  return strivi
+}
+
+let strivi = strivify("bull")
+console.log(strivi)
 
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
