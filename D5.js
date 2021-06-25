@@ -13,7 +13,7 @@ let area = function(l1, l2){
   let rectangle = l1 * l2
   return rectangle
 }
-let rectangle = area(2,3)
+// let rectangle = area(2,3)
 // console.log(rectangle)
 
 /* EXERCISE 2
@@ -21,16 +21,23 @@ Write a function "crazySum" which receives two integers. It should return the su
 */
 
 let crazySum = function(int1, int2){
-    let sum = int1 === int2 ? (int1+int2)*3 :int1+int2 
+    let sum = int1 === int2 ? (int1+int2)*3 : (int1+int2) 
     return sum
 }
-let sum = crazySum(2,2)
-console.log(sum)
+// let sum = crazySum(2,2)
+// console.log(sum)
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
 It should return triple their absolute difference if the given number is greater than 19.
 */
+
+let crazyDiff = function (number) {
+  let difference = number > 19 ? (number -19)*3 : (number -19)
+  return difference
+}
+// let check = crazyDiff(12) 
+// console.log(check)
 
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
