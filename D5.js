@@ -73,15 +73,28 @@ let check3and7 = function(x){
   return posNum
 }
 
-let posNum = check3and7(21)
-console.log(posNum)
+// let posNum = check3and7(21)
+// console.log(posNum)
 
 
 /* EXERCISE 7
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR CODE HERE */
+let reverseString = function(string) {
+  let reverse = [] 
+  reverse.push(string)
+
+
+
+  
+  return reverse
+}
+let reverse = reverseString(abc)
+console.log(reverse)
+
+
+
 
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
