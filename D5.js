@@ -87,11 +87,11 @@ let reverseString = function(string) {
 
 
 
-  
+
   return reverse
 }
-let reverse = reverseString(abc)
-console.log(reverse)
+// let reverse = reverseString(abc)
+// console.log(reverse)
 
 
 
